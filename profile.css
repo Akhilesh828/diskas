@@ -1,0 +1,142 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                 //? Profile                                */
+/* -------------------------------------------------------------------------- */
+
+
+.admin_bar{
+    margin-top: 50px;
+    height: 3.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    text-decoration: none;
+    
+}
+
+.admin_links {
+    height: 100%;
+    width: 40vh;
+    background-color: rgb(115, 135, 252);
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.admin_links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin_links ul li{
+    margin: 0px 15px;
+}
+.admin_links ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+.admin_links ul li a:hover{
+    color: rgb(255, 58, 222);
+    
+}
+
+
+
+
+
+
+
+.profile_container {
+    margin: 0px 0 20px 0;
+    display: grid;
+    place-items: center;
+}
+
+.profile_parent{
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 90%;
+    padding: 10px;
+    margin-top: 60px;
+}
+.profile_parent > h2{
+    font-size: 2rem;
+}
+.profile_parent > i{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+.profile_parent .left_profile span, .right_profile span{
+    color: aqua;
+}
+
+.profile_detail{
+    display: flex;
+}
+
+.profile_detail> div> div{
+    margin: 20px;
+    color: aliceblue;
+    font-size: 1.4rem;
+    background-color: rgb(142, 142, 150);
+    border-radius: 5px;
+
+    max-width: 500px;
+    padding: 10px;
+    /* overflow: scroll; */
+}
+
+
+@media only screen and (max-width: 786px) {
+    .profile_detail{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+
+/* @media only screen and (max-width: 437px) {
+    .profile_detail{
+        width: 80%;
+
+    }
+} */
+
+@media only screen and (max-width: 437px) {
+    /* .profile_detail{
+        width: 70%;
+    } */
+
+    .profile_detail> div> div{
+        margin: 10px;
+        color: aliceblue;
+        font-size: 1rem;
+        background-color: rgb(142, 142, 150);
+        border-radius: 5px;
+    
+        /* max-width: 500px; */
+        padding: 10px;
+        overflow: scroll;
+    }
+    
+}
+
+@media only screen and (max-width: 300px) {
+    .profile_detail{
+        width: 80%;
+    }
+}
+

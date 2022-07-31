@@ -1,0 +1,166 @@
+
+/* -------------------------------------------------------------------------- */
+/*                              //?  edit_profile                             */
+/* -------------------------------------------------------------------------- */
+
+
+
+.edit_profile_container {
+    display: grid;
+    place-items: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.edit_profile_container>h1 {
+    color: white;
+}
+
+.edit_profile {
+    display: grid;
+    place-items: center;
+    margin-top: -17px;
+    
+}
+
+.edit_profile form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+
+}
+
+.edit_profile form .public_info {
+    background-color: rgba(255, 218, 218, 0.884);
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0 50px 5px white ;
+
+}
+
+.edit_profile form label {
+    margin-bottom: -20px;
+    font-weight: 500;
+}
+
+.edit_profile form .links_info {
+    background-color: antiquewhite;
+    margin: 20px;
+    display: grid;
+    place-items: center;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 0px 0 50px 5px white ;
+
+}
+
+
+
+.edit_profile form input,textarea  {
+    width: 350px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid aqua;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 20px 0 30px 0;
+    padding: 8px;
+}
+
+
+.edit_profile form textarea {
+    max-width: 350px;
+    min-height: 100px;
+}
+
+.edit_profile form button {
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: aqua;
+    /* background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple ); */
+    font-size: 1.1rem;
+    outline: line;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.edit_profile form button:hover {
+    background: linear-gradient(45deg,
+            rgb(27, 199, 241) 30%,
+            rgb(132, 0, 255),
+            purple);
+}
+
+.edit_profile form button:active {
+    transform: translateY(2px);
+}
+
+
+
+@media only screen and (max-width: 972px) {
+
+    .edit_profile form .public_info,
+    .edit_profile form .links_info {
+        width: 300px;
+    }
+
+    .edit_profile form input {
+        width: 250px;
+    }
+
+    .edit_profile form textarea {
+        max-width: 250px;
+    }
+}
+
+
+
+@media only screen and (max-width: 586px) {
+
+    .edit_profile form {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .edit_profile form .public_info,
+    .edit_profile form .links_info {
+        width: 300px;
+    }
+
+    .edit_profile form input {
+        width: 250px;
+        font-size: 1rem;
+    }
+
+    .edit_profile form textarea {
+        max-width: 250px;
+        font-size: 1rem;
+
+    }
+}
+
+@media only screen and (max-width: 360px) {
+
+    .edit_profile form .public_info,
+    .edit_profile form .links_info {
+        width: 280px;
+    }
+
+    .edit_profile form input {
+        width: 230px;
+    }
+
+    .edit_profile form textarea {
+        max-width: 230px;
+    }
+}

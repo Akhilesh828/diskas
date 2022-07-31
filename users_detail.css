@@ -1,0 +1,61 @@
+.table_container{
+
+    width: 100vw;
+    padding-top: 50px;
+    }
+    .table_container h1{
+    display: block;
+    text-align: center;
+    
+    }
+    
+    .table_parent{
+    display: grid;
+    place-items: center;
+    overflow-x: scroll;
+    }
+    .table_container .table_parent table{
+    border-collapse: collapse;
+    /* display: grid; */
+    text-align: center;
+    margin: 0 100px 50px 100px;
+    background-color: rgb(122, 255, 255);
+    
+    }
+    .table_container .table_parent table thead th{
+    font-size: 1.2rem;
+    line-height: 40px;
+    
+    }
+    .table_parent table thead th,tbody tr td{
+    
+    border: 2px solid black;
+    /* border-radius: 100px; */
+    /* min-width: 200px; */
+    max-width: 400px;
+    padding: 5px;
+    
+    }
+    
+    .table_container .table_parent table table tbody tr td{
+    line-height: 25px;
+    font-size: 1.3rem;
+    }
+    
+    .btn{
+        border: none;
+        outline: none;
+        width: 100px;
+        font-size: 1rem;
+        border-radius: 8px;
+        height: 35px;
+        cursor: pointer;
+        background-color: greenyellow;
+    }
+    .btn:hover{
+        box-shadow: 0px 0px 10px 5px rgb(111, 216, 13);
+        background-color: rgb(0, 255, 255);
+    }
+    .btn:active{
+        background-color: rgb(81, 255, 0);
+    }

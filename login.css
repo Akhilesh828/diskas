@@ -1,0 +1,167 @@
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  //? Login                                 */
+/* -------------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login_container{
+    background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple );
+    width: 100vw;
+    height: 110vh;
+    /* display:grid;
+    place-items: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_parent{
+    background-color: white;
+    width: 400px;
+    /* height: 500px; */
+    /* max-height: 650px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0 50px 5px white ;
+
+}
+.login_parent h1{
+    margin: 30px 0px;
+    border-bottom: 2px dashed aqua;
+}
+.login_parent form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.login_parent form input{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid aqua;
+    outline: none;
+    font-size: 1.1rem;
+    margin: 20px 0 30px 0;
+}
+.login_parent form button{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: aqua;
+    /* background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple ); */
+    font-size: 1.1rem;
+    outline: line;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.login_parent form button:hover{
+    /* background-color: aqua; */
+    background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple );
+}
+.login_parent form button:active{
+    transform: translateY(2px);
+}
+
+.login_parent h3{
+    margin: 0 0 20px 0;
+}
+
+
+
+@media only screen and (max-width:487px){
+    .login_parent{
+        background-color: white;
+        width: 300px;
+        /* height: 400px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+
+    .login_parent form input{
+        width: 200px;
+        height: 25px;
+        border: none;
+        border-bottom: 2px solid aqua;
+        outline: none;
+        font-size: 1rem;
+        margin: 10px 0 20px 0;
+    }
+
+}
+@media only screen and (max-width:330px){
+    .login_parent{
+        background-color: white;
+        width: 280px;
+        /* height: 400px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .login_parent form input{
+        width: 180px;
+        height: 25px;
+        border: none;
+        border-bottom: 2px solid aqua;
+        outline: none;
+        font-size: 1rem;
+        margin: 10px 0 20px 0;
+    }
+}
+
+
+@media only screen and (max-width:300px){
+    .login_parent{
+        background-color: white;
+        width: 250px;
+        /* height:300px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+
+    .login_parent form input{
+        width: 160px;
+        height: 25px;
+
+    }
+    .login_parent h1{
+        margin-bottom: 30px;
+        border-bottom: 2px dashed aqua;
+        font-size: 20px;
+    }
+
+}
+
+
+.remember{
+    display: flex;
+}
+.remember > h4{
+    margin: 30px 0 0 90px;
+}
+.remember input{
+    margin: 0;
+    right: 20px;
+}
+

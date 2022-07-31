@@ -1,0 +1,135 @@
+
+/* -------------------------------------------------------------------------- */
+/*                                 //? signup                                 */
+/* -------------------------------------------------------------------------- */
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signup_container{
+    background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple );
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    place-items: center;
+}
+
+.signup_parent{
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 0px 0 50px 5px white ;
+    margin: 50px 0 20px 0;
+    /* transition: 5s ease-in-out; */
+
+}
+.signup_parent h1{
+    margin-bottom: 30px;
+    border-bottom: 2px dashed aqua;
+}
+.signup_parent form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.signup_parent form input{
+    width: 250px;
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid aqua;
+    outline: none;
+    font-size: 18px;
+    margin: 20px 0 30px 0;
+}
+.signup_parent form button{
+    width: 150px;
+    height: 30px;
+    color: white;
+    background-color: aqua;
+    /* background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple ); */
+    font-size: 18px;
+    outline: line;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+.signup_parent form button:hover{
+    /* background-color: aqua; */
+    background: linear-gradient(45deg,rgb(27, 199, 241) 30% , rgb(132, 0, 255),purple );
+}
+.signup_parent form button:active{
+    transform: translateY(2px);
+}
+.signup_parent form h4{
+    margin-bottom: 0;
+}
+
+
+@media only screen and (max-width:487px){
+    .signup_parent{
+        background-color: white;
+        width: 300px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+
+    .signup_parent form input{
+        width: 200px;
+        height: 25px;
+        border: none;
+        border-bottom: 2px solid aqua;
+        outline: none;
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+    }
+
+}
+
+
+@media only screen and (max-width:300px){
+    .signup_parent{
+        background-color: white;
+        width: 200px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+
+    .signup_parent form input{
+        width: 200px;
+        height: 25px;
+        border: none;
+        border-bottom: 2px solid aqua;
+        outline: none;
+        font-size: 18px;
+        margin: 10px 0 20px 0;
+    }
+    .signup_parent h1{
+        margin-bottom: 30px;
+        border-bottom: 2px dashed aqua;
+        font-size: 20px;
+    }
+
+}
+
+
